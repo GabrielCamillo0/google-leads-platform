@@ -1,0 +1,14 @@
+# Docker para desenvolvimento local 
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./users.db
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"

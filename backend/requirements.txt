@@ -1,0 +1,10 @@
+fastapi==0.115.0
+uvicorn==0.34.0
+
+python-dotenv
+stripe
+openai
+playwright
+beautifulsoup4
+requests
+pydantic
